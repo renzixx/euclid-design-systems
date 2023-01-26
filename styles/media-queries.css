@@ -26,9 +26,6 @@
         width: 660px;
         font-size: 20px;
     }
-    .hero__button {
-        
-    }
     .hero__dots {
         left: 640px;
     }
@@ -434,8 +431,8 @@
     .about__button_border {
         border-width: 2px;
     }
-    .about__button_border:hover,
-    .about__button_border:focus {
+    .about__button:hover,
+    .about__button:focus {
         color: var(--white);
     }
     .about__item {
