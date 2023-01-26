@@ -1,0 +1,589 @@
+/*================ 1440px ================*/
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1340px;
+    }
+    .header__content {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .menu {
+        margin-left: 0;
+    }
+    .search {
+        margin-left: 0;
+    }
+    .hero__content {
+        background-size: 100% 100%;
+    }
+    .hero__title {
+        width: 770px;
+        font-size: 60px;
+    }
+    .hero__text {
+        width: 660px;
+        font-size: 20px;
+    }
+    .hero__button {
+        
+    }
+    .hero__dots {
+        left: 640px;
+    }
+    .about__image {
+        width: 654px;
+        height: 525px;
+    }
+    .about__row {
+        top: 329px;
+        width: 654px;
+    }
+    .about__row-text {
+        width: 380px;
+        line-height: 28px;
+        text-align: start;
+    }
+    .about__item {
+        padding: 43px 0 44px 210px;
+    }
+    .about__item-title {
+        font-size: 22px;
+    }
+    .about__item-text {
+        width: 400px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .about__ellipse {
+        top: 80px;
+        left: 45px;
+        width: 90px;
+        height: 90px;
+    }
+    .about__package {
+        top: 45px;
+        left: 96px;
+        width: 90px;
+        height: 100px;
+    }
+    .about__gear {
+        top: 48px;
+        left: 82px;
+        width: 100px;
+        height: 100px;
+    } 
+    .how__text {
+        width: 618px;
+    }
+    .how__image {
+        width: 100%;
+        height: 460px;
+    }
+    .faq__accordion-title {
+        font-size: 20px;
+    }
+    .form__input {
+        width: 520px;
+    }
+    .footer__text {
+        width: 345px;
+        line-height: 30px;
+        margin-top: 78px;
+    }
+}
+
+/*================ 1024px ================*/
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 924px;
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .search {
+        margin: 0;
+    }
+    .hero {
+        padding: 40px 0 17px;
+    }
+    .hero__content {
+        height: 668px;
+        background: url('../images/hero/hero-bg-01-1.png');
+        padding: 160px 77px;
+    }
+    .hero__dots {
+        left: 420px;
+    }
+    .about {
+        padding: 25px 0 50px;
+    }
+    .about__columns {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 60px;
+    }
+    .about__column {
+        width: 100%;
+        min-height: 622px;
+    }
+    .about__column:not(:first-child) {
+        margin: 32px 0 0;
+    }
+    .about__image {
+        width: 100%;
+        height: 100%;
+    }
+    .about__row {
+        width: 100%;
+        top: 465px;
+        border-radius: 32px;
+    }
+    .about__row-text {
+        width: 454px;
+    }
+    .about__item {
+        padding: 64px 0 64px 317px;
+        min-height: 295px;
+    }
+    .about__ellipse {
+        left: 77px;
+        width: 120px;
+        height: 120px;
+    }
+    .about__package {
+        left: 148px;
+        width: 119px;
+        height: 132px;
+    }
+    .about__gear {
+        left: 131px;
+        width: 135px;
+        height: 135px;
+    } 
+    .how {
+        padding: 40px 0;
+    }
+    .how__columns {
+        margin-top: 62px;
+    }
+    .how__column {
+        min-height: 751px;
+    }
+    .how__column:last-child {
+        background-image: url('../images/how/bg-01-1.png');
+        background-repeat: no-repeat;
+    }
+    .how__text {
+        width: 437px;
+    }
+    .how__buttons {
+        margin-top: 45px;
+    }
+    .how__image {
+        display: none;
+    }
+    .faq {
+        padding: 40px 0 80px;
+    }
+    .faq__accordion-text {
+        max-width: 655px;
+    }
+    .footer__column:last-child {
+        display: none;
+    }
+    .form__input {
+        width: 541px;
+    }
+}
+
+/*================ 768px ================*/
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 668px;
+    }
+    .header__content {
+        height: 69px;
+    }
+    .hero__content {
+        height: 662px;
+        padding: 160px 40px;
+        background: url('../images/hero/hero-bg-01-2.png');
+    }
+    .header__logo-image {
+        width: 150px;
+    }
+    .hero__title {
+        font-size: 50px;
+    }
+    .hero__text {
+        width: 588px;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .hero__button {
+        margin-top: 60px;
+    }
+    .hero__dots {
+        left: 292px;
+    }
+    .about__column {
+        min-height: 502px;
+    }
+    .about__image {
+        height: 650px;
+    }
+    .about__row {
+        width: 100%;
+        top: 454px;
+    }
+    .about__row-text {
+        width: 366px;
+    }
+    .about__item {
+        padding: 34px 0 34px 170px;
+        min-height: 235px;
+    }    
+    .about__ellipse {
+        top: 95px;
+        left: 40px;
+        width: 72px;
+        height: 72px;
+    }
+    .about__package {
+        left: 82px;
+        width: 71px;
+        height: 79px;
+    }
+    .about__gear {
+        left: 72px;
+        width: 81px;
+        height: 81px;
+    }
+    .how__step:not(:first-child) {
+        margin-left: 155px;
+    }    
+    .how__columns {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .how__column {
+        width: 100%;
+        min-height: 284px;
+    }
+    .how__column:last-child {
+        background-image: url('../images/how/bg-01-2.png');
+    }
+    .how__column:not(:first-child) {
+        margin-left: 0;
+        margin-bottom: 38px;
+    }
+    .how__text {
+        width: 100%;
+    }
+    .faq {
+        padding: 25px 0 111px;
+    }
+    .faq__accordion-row {
+        padding: 30px 0;
+    }
+    .faq__accordion-title {
+        max-width: 576px;
+    }
+    .faq__accordion-text {
+        max-width: 465px;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+    .footer__logo {
+        margin-top: 50px;
+    }
+    .footer__columns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .footer__column {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .footer__menu {
+        display: none;
+    }
+    .form__input {
+        width: 570px;
+    }
+    .social {
+        margin-top: 16px;
+    }
+}
+
+/*================ 426px ================*/
+
+@media (max-width: 426px) {
+    .container {
+        max-width: 290px;
+    }
+    .button {
+        font-size: 12px;
+        border-radius: 8px;
+    }
+    .header__logo-image {
+        width: 110px;
+    }
+    .hero {
+        padding: 30px 0;
+    }
+    .hero__content {
+        height: 308px;
+        background: url('../images/hero/hero-bg-01-3.png');
+        padding: 60px 22px;
+    }
+    .hero__title {
+        width: 247px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .hero__text {
+        width: 247px;
+        font-size: 12px;
+        margin-top: 6px;
+        text-align: center;
+    }
+    .hero__button {
+        min-width: 161px;
+        min-height: 41px;
+        margin: 32px auto 0;
+    }
+    .hero__dots {
+        left: 110px;
+        bottom: 15px;
+    }
+    .hero__dot {
+        width: 10px;
+        height: 10px;
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .about__title {
+        font-size: 24px;
+    }
+    .about__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .about__columns {
+        margin-top: 14px;
+    }
+    .about__column {
+        min-height: 188px;
+    }
+    .about__image {
+        height: 200px;
+    }
+    .about__row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        position: relative;
+        top: 0;
+        padding: 0;
+        background: transparent;
+        color: var(--black);
+    }
+    .about__row-text {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .about__button {
+        min-width: 162px;
+        min-height: 39px;
+        line-height: 14px;
+        color: var(--orange);
+    }
+    .about__button_border {
+        border-width: 2px;
+    }
+    .about__button_border:hover,
+    .about__button_border:focus {
+        color: var(--white);
+    }
+    .about__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        min-height: 188px;
+        padding: 0;
+        margin-top: 61px;
+        border: none;
+    }
+    .about__item:not(:first-child) {
+        margin-top: 93px;
+    }
+    .about__item-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .about__item-text {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 4px;
+    }
+    .about__ellipse {
+        top: -55px;
+        left: 0;
+        width: 43px;
+        height: 43px;
+    }
+    .about__package {
+        top: -61px;
+        left: 21px;
+        width: 43px;
+        height: 48px;
+    }
+    .about__gear {
+        top: -61px;
+        left: 21px;
+        width: 43px;
+        height: 43px;
+    }
+    .how {
+        padding: 30px 0;
+    }
+    .how__title {
+        font-size: 24px;
+    }
+    .how__steps {
+        margin-top: 20px;
+    }
+    .how__step {
+        font-size: 14px;
+    }
+    .how__step:not(:first-child) {
+        margin-left: 44px;
+    }    
+    .how__columns {
+        margin-top: 16px;
+    }
+    .how__column {
+        min-height: 160px;
+    }
+    .how__column:last-child {
+        background-image: url('../images/how/bg-01-3.png');
+    }
+    .how__column:not(:first-child) {
+        margin-bottom: 16px;
+    }
+    .how__block-text-title {
+        font-weight: 500;
+    }
+    .how__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .how__button {
+        min-width: 162px;
+        min-height: 39px;
+    }
+    .how__button:nth-child(2) {
+        min-width: 118px;
+    }
+    .how__button:not(:first-child) {
+        margin-left: 10px;
+    }
+    .faq {
+        padding: 30px 0 60px;
+    }
+    .faq__title {
+        font-size: 24px;
+    }
+    .faq__accordion {
+        margin-top: 16px;
+    }
+    .faq__accordion-title {
+        max-width: 245px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .faq__accordion-button {
+        width: 30px;
+        height: 30px;
+    }
+    .faq__accordion-button-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .faq__accordion-text {
+        max-width: 100%;
+    }
+    .footer {
+        padding: 30px 0;
+    }
+    .footer__title {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        font-size: 24px;
+    }
+    .footer__logo {
+        margin-top: 33px;
+    }
+    .footer__logo-image {
+        width: 131px;
+    }
+    .form {
+        margin-top: 20px;
+    }
+    .form__input {
+        width: 290px;
+    }
+    .form__button {
+        width: 180px;
+        height: 39px;
+        margin-top: 25px;
+    }
+    .social {
+        margin-top: 16px;
+    }
+    .social__link:not(:first-child) {
+        margin-left: 16px;
+    }
+    .social__icon {
+        width: 40px;
+        height: 40px;
+    }
+}

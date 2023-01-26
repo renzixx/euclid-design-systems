@@ -3,7 +3,8 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 :root {
@@ -36,10 +37,21 @@ body, textarea, input, button {
 /*================ Button ================*/
 
 .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
     border-radius: 16px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
     transition: .2s ease;
 }
 
@@ -47,13 +59,18 @@ body, textarea, input, button {
 
 .header {
     background: #FFFFFF;
-    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 32px 32px;
 }
 
 .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100px;
 }
 
@@ -67,6 +84,8 @@ body, textarea, input, button {
     width: 30px;
     height: 3px;
     background-color: var(--black);
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
     transition: .1s linear;
 }
 
@@ -88,6 +107,8 @@ body, textarea, input, button {
 }
 
 .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
@@ -110,6 +131,8 @@ body, textarea, input, button {
     width: 100%;
     height: 2px;
     background-color: transparent;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
     transition: .1s linear;
 }
 
@@ -138,37 +161,39 @@ body, textarea, input, button {
 }
 
 .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
+    height: 620px;
+    color: var(--white);
     background: url('../images/hero/hero-bg-01.png');
     background-repeat: no-repeat;
-    color: var(--white);
-    height: 620px;
+    padding: 100px 80px;
 }
 
 .hero__title {
-    position: absolute;
-    top: 100px;
-    left: 80px;
     width: 837px;
     font-size: 70px;
     font-weight: 800;
 }
 
 .hero__text {
-    position: absolute;
-    top: 294px;
-    left: 80px;
     width: 790px;
     font-size: 24px;
     font-weight: 700;
+    margin-top: 24px;
 }
 
 .hero__button {
-    position: absolute;
-    top: 442px;
-    left: 80px;
-    padding: 25px 39px;
+    max-width: 280px;
+    min-height: 78px;
     font-size: 23px;
+    margin-top: 60px;
 }
 
 .hero__button_orange {
@@ -185,6 +210,8 @@ body, textarea, input, button {
 }
 
 .hero__dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     left: 843px;
@@ -221,11 +248,13 @@ body, textarea, input, button {
 
 .about__text {
     margin-top: 20px;
-    max-width: 1235px;
     line-height: 32px;
+    text-align: justify;
 }
 
 .about__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     margin-top: 50px;
@@ -240,9 +269,15 @@ body, textarea, input, button {
 }
 
 .about__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     left: 0;
     top: 426px;
@@ -251,17 +286,19 @@ body, textarea, input, button {
     height: 196px;
     background: rgba(0, 0, 0, 0.5);
     color: var(--white);
-    border-radius: 32px;
+    border-radius: 27px;
 }
 
 .about__row-text {
     width: 433px;
     font-weight: 700;
     line-height: 32px;
+    text-align: justify;
 }
 
 .about__button {
-    padding: 20px 38px;
+    min-width: 175px;
+    min-height: 60px;
 }
 
 .about__button_border {
@@ -278,6 +315,8 @@ body, textarea, input, button {
 }
 
 .about__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     padding: 64px 0 64px 300px;
@@ -312,8 +351,13 @@ body, textarea, input, button {
 }
 
 .about__block-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 0;
 }
 
@@ -328,6 +372,7 @@ body, textarea, input, button {
     font-weight: 400;
     line-height: 32px;
     margin-top: 8px;
+    text-align: justify;
 }
 
 /*================ How ================*/
@@ -342,6 +387,8 @@ body, textarea, input, button {
 }
 
 .how__steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
 }
@@ -349,6 +396,8 @@ body, textarea, input, button {
 .how__step {
     font-size: 18px;
     cursor: pointer;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
     transition: .1s linear;
 }
 
@@ -366,6 +415,8 @@ body, textarea, input, button {
 }
 
 .how__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 55px;
 }
@@ -382,17 +433,23 @@ body, textarea, input, button {
     width: 758px;
     margin-top: 8px;
     line-height: 32px;
+    text-align: justify;
 }
 
 .how__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 38px;
 }
 
 .how__button {
-    padding: 20px 38px;
+    min-width: 175px;
+    min-height: 60px;
 }
 
 .how__button:nth-child(2) {
+    min-width: 148px;
     font-weight: 400;
     color: var(--black);
 }
@@ -454,9 +511,15 @@ body, textarea, input, button {
 }
 
 .faq__accordion-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 40px 0;
 }
 
@@ -471,12 +534,19 @@ body, textarea, input, button {
     padding-bottom: 40px;
     max-width: 1003px;
     line-height: 32px;
+    text-align: justify;
 }
 
 .faq__accordion-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 50px;
     height: 50px;
     background-color: var(--light-gray);
@@ -492,13 +562,22 @@ body, textarea, input, button {
 }
 
 .footer__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer__menu {
@@ -511,6 +590,8 @@ body, textarea, input, button {
     line-height: 36px;
     color: var(--light-gray);
     text-decoration: none;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
     transition: .1s linear;
 }
 
@@ -542,13 +623,18 @@ body, textarea, input, button {
 }
 
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 25px;
 }
 
 .form__input {
-    padding-left: 24px;
+    padding: 0 24px;
     width: 570px;
     height: 60px;
     font-size: 16px;
@@ -569,6 +655,22 @@ body, textarea, input, button {
     resize: none;
 }
 
+.form__input::-webkit-input-placeholder {
+    color: var(--light-gray);
+}
+
+.form__input::-moz-placeholder {
+    color: var(--light-gray);
+}
+
+.form__input:-ms-input-placeholder {
+    color: var(--light-gray);
+}
+
+.form__input::-ms-input-placeholder {
+    color: var(--light-gray);
+}
+
 .form__input::placeholder {
     color: var(--light-gray);
 }
@@ -576,9 +678,12 @@ body, textarea, input, button {
 .form__button {
     width: 269px;
     height: 58px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     cursor: pointer;
     margin-top: 32px;
+    border: none;
 }
 
 .form__button_orange {
@@ -599,487 +704,5 @@ body, textarea, input, button {
     line-height: 32px;
     color: var(--light-gray);
     margin-top: 87px;
-}
-
-/*================ Media queries ================*/
-
-/*================ 1024px ================*/
-
-@media (max-width: 1024px) {
-    .container {
-        max-width: 924px;
-    }
-    .header__content {
-        justify-content: space-between;
-    }
-    .menu {
-        display: none;
-    }
-    .burger {
-        display: block;
-    }
-    .search {
-        margin: 0;
-    }
-    .hero {
-        padding: 40px 0 17px;
-    }
-    .hero__content {
-        background: url('../images/hero/hero-bg-01-1.png');
-        height: 668px;
-    }
-    .hero__title {
-        left: 77px;
-        top: 160px;
-        width: 770px;
-        font-size: 60px;
-    }
-    .hero__text {
-        left: 77px;
-        top: 322px;
-        width: 660px;
-        font-size: 20px;
-    }
-    .hero__button {
-        top: 430px;
-        left: 77px;
-    }
-    .hero__dots {
-        left: 420px;
-    }
-    .about {
-        padding: 25px 0 50px;
-    }
-    .about__text {
-        max-width: 929px;
-    }
-    .about__columns {
-        flex-direction: column;
-        margin-top: 60px;
-    }
-    .about__column {
-        width: 100%;
-        max-height: 640px;
-    }
-    .about__column:not(:first-child) {
-        margin: 32px 0 0;
-    }
-    .about__image {
-        width: 100%;
-        height: 640px;
-    }
-    .about__row {
-        width: 100%;
-        top: 444px;
-    }
-    .about__item {
-        padding-left: 317px;
-    }
-    .about__ellipse {
-        left: 77px;
-    }
-    .about__package {
-        left: 148px;
-    }
-    .about__gear {
-        left: 131px;
-    } 
-    .how {
-        padding: 40px 0;
-    }
-    .how__columns {
-        margin-top: 62px;
-    }
-    .how__column {
-        min-height: 751px;
-    }
-    .how__column:last-child {
-        background-image: url('../images/how/bg-01-1.png');
-        background-repeat: no-repeat;
-    }
-    .how__text {
-        width: 437px;
-    }
-    .how__buttons {
-        margin-top: 45px;
-    }
-    .how__image {
-        display: none;
-    }
-    .faq {
-        padding: 40px 0 80px;
-    }
-    .faq__accordion-title {
-        font-size: 20px;
-    }
-    .faq__accordion-text {
-        max-width: 655px;
-    }
-    .footer__column:last-child {
-        display: none;
-    }
-    .form__input {
-        width: 541px;
-    }
-}
-
-/*================ 768px ================*/
-
-@media (max-width: 768px) {
-    .container {
-        max-width: 668px;
-    }
-    .header__content {
-        height: 69px;
-    }
-    .hero__content {
-        background: url('../images/hero/hero-bg-01-2.png');
-        height: 662px;
-    }
-    .hero__title {
-        left: 40px;
-        font-size: 50px;
-    }
-    .hero__text {
-        left: 40px;
-        top: 298px;
-        width: 588px;
-        font-size: 18px;
-    }
-    .hero__button {
-        top: 424px;
-        left: 40px;
-    }
-    .hero__dots {
-        left: 292px;
-    }
-    .about__text {
-        max-width: 668px;
-    }
-    .about__column {
-        width: 100%;
-        max-height: 650px;
-    }
-    .about__image {
-        height: 650px;
-    }
-    .about__row {
-        width: 100%;
-        top: 454px;
-    }
-    .about__row-text {
-        width: 366px;
-    }
-    .about__item {
-        padding: 34px 0 34px 170px;
-    }    
-    .about__ellipse {
-        top: 95px;
-        left: 40px;
-        width: 72px;
-        height: 72px;
-    }
-    .about__package {
-        left: 82px;
-        width: 71px;
-        height: 79px;
-    }
-    .about__gear {
-        left: 72px;
-        width: 81px;
-        height: 81px;
-    }
-    .how__step:not(:first-child) {
-        margin-left: 155px;
-    }    
-    .how__columns {
-        flex-direction: column-reverse;
-        margin-top: 50px;
-    }
-    .how__column {
-        width: 100%;
-        min-height: 284px;
-    }
-    .how__column:last-child {
-        background-image: url('../images/how/bg-01-2.png');
-    }
-    .how__column:not(:first-child) {
-        margin-left: 0;
-        margin-bottom: 38px;
-    }
-    .how__text {
-        width: 100%;
-    }
-    .faq {
-        padding: 25px 0 111px;
-    }
-    .faq__accordion-row {
-        padding: 30px 0;
-    }
-    .faq__accordion-title {
-        max-width: 576px;
-    }
-    .faq__accordion-text {
-        max-width: 465px;
-    }
-    .footer {
-        padding: 40px 0;
-    }
-    .footer__logo {
-        margin-top: 50px;
-    }
-    .footer__columns {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-    .footer__column {
-        align-items: center;
-    }
-    .footer__menu {
-        display: none;
-    }
-    .form__input {
-        width: 570px;
-    }
-    .social {
-        margin-top: 16px;
-    }
-}
-
-/*================ 320px ================*/
-
-@media (max-width: 426px) {
-    .container {
-        max-width: 290px;
-    }
-    .button {
-        font-size: 12px;
-        border-radius: 8px;
-    }
-    .header__logo-image {
-        width: 110px;
-    }
-    .hero {
-        padding: 30px 0;
-    }
-    .hero__content {
-        background: url('../images/hero/hero-bg-01-3.png');
-        height: 308px;
-    }
-    .hero__title {
-        top: 60px;
-        left: 22px;
-        width: 247px;
-        font-size: 20px;
-        text-align: center;
-    }
-    .hero__text {
-        left: 22px;
-        top: 115px;
-        width: 247px;
-        font-size: 12px;
-        text-align: center;
-    }
-    .hero__button {
-        top: 208px;
-        left: 64px;
-        padding: 13px 28px;
-    }
-    .hero__dots {
-        left: 110px;
-        bottom: 15px;
-    }
-    .hero__dot {
-        width: 10px;
-        height: 10px;
-    }
-    .about {
-        padding: 30px 0;
-    }
-    .about__title {
-        font-size: 24px;
-    }
-    .about__text {
-        max-width: 290px;
-        font-size: 14px;
-        line-height: 28px;
-    }
-    .about__columns {
-        margin-top: 14px;
-    }
-    .about__image {
-        height: 200px;
-    }
-    .about__row {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-        top: 0;
-        padding: 0;
-        background: transparent;
-        color: var(--black);
-    }
-    .about__row-text {
-        width: 100%;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-    .about__button {
-        padding: 12px 44px;
-        line-height: 14px;
-        color: var(--orange);
-    }
-    .about__button_border {
-        border-width: 2px;
-    }
-    .about__item {
-        flex-direction: column;
-        padding: 0;
-        margin-top: 61px;
-        border: none;
-    }
-    .about__item:not(:first-child) {
-        margin-top: 93px;
-    }
-    .about__item-title {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-    }
-    .about__item-text {
-        width: 100%;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 28px;
-        margin-top: 4px;
-    }
-    .about__ellipse {
-        top: -55px;
-        left: 0;
-        width: 43px;
-        height: 43px;
-    }
-    .about__package {
-        top: -61px;
-        left: 21px;
-        width: 43px;
-        height: 48px;
-    }
-    .about__gear {
-        top: -61px;
-        left: 21px;
-        width: 43px;
-        height: 43px;
-    }
-    .how {
-        padding: 30px 0;
-    }
-    .how__title {
-        font-size: 24px;
-    }
-    .how__steps {
-        margin-top: 20px;
-    }
-    .how__step {
-        font-size: 14px;
-    }
-    .how__step:not(:first-child) {
-        margin-left: 44px;
-    }    
-    .how__columns {
-        margin-top: 16px;
-    }
-    .how__column {
-        min-height: 160px;
-    }
-    .how__column:last-child {
-        background-image: url('../images/how/bg-01-3.png');
-    }
-    .how__column:not(:first-child) {
-        margin-bottom: 16px;
-    }
-    .how__block-text-title {
-        font-weight: 500;
-    }
-    .how__text {
-        font-size: 14px;
-        line-height: 28px;
-    }
-    .how__buttons {
-        display: flex;
-        margin-top: 37px;
-    }
-    .how__button {
-        padding: 13px 44px 12px;
-    }
-    .how__button:nth-child(2) {
-        padding: 12px 32px;
-    }
-    
-    .how__button:not(:first-child) {
-        margin-left: 10px;
-    }
-    .faq {
-        padding: 30px 0 60px;
-    }
-    .faq__title {
-        font-size: 24px;
-    }
-    .faq__accordion {
-        margin-top: 16px;
-    }
-    .faq__accordion-title {
-        max-width: 245px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-    }
-    .faq__accordion-button {
-        width: 30px;
-        height: 30px;
-    }
-    .faq__accordion-button-icon {
-        width: 18px;
-        height: 18px;
-    }
-    .faq__accordion-text {
-        max-width: 100%;
-    }
-    .footer {
-        padding: 30px 0;
-    }
-    .footer__title {
-        align-self: flex-start;
-        font-size: 24px;
-    }
-    .footer__logo {
-        margin-top: 33px;
-    }
-    .footer__logo-image {
-        width: 131px;
-    }
-    .form {
-        margin-top: 20px;
-    }
-    .form__input {
-        width: 290px;
-    }
-    .form__button {
-        width: 180px;
-        height: 39px;
-        margin-top: 25px;
-    }
-    .social {
-        margin-top: 16px;
-    }
-    .social__link:not(:first-child) {
-        margin-left: 16px;
-    }
-    .social__icon {
-        width: 40px;
-        height: 40px;
-    }
+    text-align: justify;
 }
