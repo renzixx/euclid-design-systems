@@ -537,6 +537,10 @@ body, textarea, input, button {
     text-align: justify;
 }
 
+.faq__accordion-text.is-active {
+    display: block;
+}
+
 .faq__accordion-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -552,6 +556,15 @@ body, textarea, input, button {
     background-color: var(--light-gray);
     border-radius: 50%;
     cursor: pointer;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.faq__accordion-button.is-active {
+    -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotateZ(45deg);
 }
 
 /*================ Footer ================*/

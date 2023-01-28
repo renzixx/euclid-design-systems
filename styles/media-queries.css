@@ -192,6 +192,7 @@
     }
     .faq__accordion-text {
         max-width: 655px;
+        line-height: 30px;
     }
     .footer__column:last-child {
         display: none;
@@ -547,6 +548,8 @@
     }
     .faq__accordion-text {
         max-width: 100%;
+        font-size: 14px;
+        line-height: 28px;
     }
     .footer {
         padding: 30px 0;
