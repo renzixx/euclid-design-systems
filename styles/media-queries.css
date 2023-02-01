@@ -245,6 +245,7 @@
     }
     .hero__title {
         left: 40px;
+        width: 588px;
         font-size: 50px;
     }
     .hero__text {
