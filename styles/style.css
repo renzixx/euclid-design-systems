@@ -55,6 +55,47 @@ body, textarea, input, button {
     transition: .2s ease;
 }
 
+/*================ Swiper ================*/
+
+.swiper {
+    width: 1770px;
+    height: 620px;
+    border-radius: 32px;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+}
+
+.slide-01 {
+    background-image: url('../images/hero/hero-bg-01.png');
+}
+
+.slide-02 {
+    background-image: url('../images/hero/hero-bg-02.png');
+}
+
+.slide-03 {
+    background-image: url('../images/hero/hero-bg-03.png');
+}
+
+.swiper-pagination {
+    bottom: 30px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+    background: var(--white);
+}
+
+.swiper-pagination-bullet:not(:first-child) {
+    margin-left: 20px !important;
+}
+
 /*================ Header ================*/
 
 .header {
@@ -119,8 +160,9 @@ body, textarea, input, button {
 
 .menu__link {
     position: relative;
-    color: var(--black);
+    font-size: 18px;
     font-weight: 600;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -161,39 +203,39 @@ body, textarea, input, button {
 }
 
 .hero__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: relative;
     height: 620px;
     color: var(--white);
-    background: url('../images/hero/hero-bg-01.png');
-    background-repeat: no-repeat;
-    padding: 100px 80px;
 }
 
 .hero__title {
+    position: absolute;
+    top: 100px;
+    left: 80px;
     width: 837px;
     font-size: 70px;
     font-weight: 800;
+    z-index: 1;
 }
 
 .hero__text {
+    position: absolute;
+    top: 270px;
+    left: 80px;
     width: 790px;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 24px;
+    z-index: 1;
 }
 
 .hero__button {
-    max-width: 280px;
+    position: absolute;
+    top: 390px;
+    left: 80px;
+    min-width: 280px;
     min-height: 78px;
     font-size: 23px;
-    margin-top: 60px;
+    z-index: 1;
 }
 
 .hero__button_orange {
@@ -207,32 +249,6 @@ body, textarea, input, button {
 
 .hero__button_orange:active {
     background-color: var(--dark-orange);
-}
-
-.hero__dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    left: 843px;
-    bottom: 30px;
-}
-
-.hero__dot {
-    width: 15px;
-    height: 15px;
-    background-color: var(--light-gray);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.hero__dot:not(:first-child) {
-    margin-left: 20px;
-}
-
-.hero__dot:focus,
-.hero__dot:active {
-    background-color: var(--white);
 }
 
 /*================ About ================*/

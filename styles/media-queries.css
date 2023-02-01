@@ -18,6 +18,10 @@
     .hero__content {
         background-size: 100% 100%;
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
     .hero__title {
         width: 770px;
         font-size: 60px;
@@ -25,9 +29,6 @@
     .hero__text {
         width: 660px;
         font-size: 20px;
-    }
-    .hero__dots {
-        left: 640px;
     }
     .about__image {
         width: 654px;
@@ -111,11 +112,27 @@
     }
     .hero__content {
         height: 668px;
-        background: url('../images/hero/hero-bg-01-1.png');
-        padding: 160px 77px;
     }
-    .hero__dots {
-        left: 420px;
+    .slide-01 {
+        background-image: url('../images/hero/hero-bg-01-1.png');
+    }
+    .slide-02 {
+        background-image: url('../images/hero/hero-bg-02-1.png');
+    }
+    .slide-03 {
+        background-image: url('../images/hero/hero-bg-03-1.png');
+    }
+    .hero__title {
+        top: 160px;
+        left: 77px;
+    }
+    .hero__text {
+        top: 322px;
+        left: 77px;
+    }
+    .hero__button {
+        top: 430px;
+        left: 77px;
     }
     .about {
         padding: 25px 0 50px;
@@ -213,25 +230,32 @@
     }
     .hero__content {
         height: 662px;
-        padding: 160px 40px;
-        background: url('../images/hero/hero-bg-01-2.png');
+    }
+    .slide-01 {
+        background-image: url('../images/hero/hero-bg-01-2.png');
+    }
+    .slide-02 {
+        background-image: url('../images/hero/hero-bg-02-2.png');
+    }
+    .slide-03 {
+        background-image: url('../images/hero/hero-bg-03-2.png');
     }
     .header__logo-image {
         width: 150px;
     }
     .hero__title {
+        left: 40px;
         font-size: 50px;
     }
     .hero__text {
+        top: 298px;
+        left: 40px;
         width: 588px;
         font-size: 18px;
-        margin-top: 16px;
     }
     .hero__button {
-        margin-top: 60px;
-    }
-    .hero__dots {
-        left: 292px;
+        top: 424px;
+        left: 40px;
     }
     .about__column {
         min-height: 502px;
@@ -354,32 +378,42 @@
     }
     .hero__content {
         height: 308px;
-        background: url('../images/hero/hero-bg-01-3.png');
-        padding: 60px 22px;
+    }
+    .slide-01 {
+        background-image: url('../images/hero/hero-bg-01-3.png');
+    }
+    .slide-02 {
+        background-image: url('../images/hero/hero-bg-02-3.png');
+    }
+    .slide-03 {
+        background-image: url('../images/hero/hero-bg-03-3.png');
+    }
+    .swiper-pagination {
+        bottom: 10px !important;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
     }
     .hero__title {
+        top: 60px;
+        left: 22px;
         width: 247px;
         font-size: 20px;
         text-align: center;
     }
     .hero__text {
+        top: 115px;
+        left: 22px;
         width: 247px;
         font-size: 12px;
-        margin-top: 6px;
         text-align: center;
     }
     .hero__button {
+        top: 208px;
+        left: 64px;
         min-width: 161px;
         min-height: 41px;
-        margin: 32px auto 0;
-    }
-    .hero__dots {
-        left: 110px;
-        bottom: 15px;
-    }
-    .hero__dot {
-        width: 10px;
-        height: 10px;
     }
     .about {
         padding: 30px 0;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-queries.css">
     <title>Евклид</title>
@@ -43,14 +44,17 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-01"></div>
+                            <div class="swiper-slide slide-02"></div>
+                            <div class="swiper-slide slide-03"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                     <h1 class="hero__title">Проектные решения любой сложности</h1>
                     <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
                     <a href="#" class="button hero__button hero__button_orange">Заказать расчет</a>
-                    <div class="hero__dots">
-                        <span class="hero__dot"></span>
-                        <span class="hero__dot"></span>
-                        <span class="hero__dot"></span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -233,6 +237,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/accordion.js"></script>
+    <script src="scripts/swiper.js"></script>
 </body>
 </html>
