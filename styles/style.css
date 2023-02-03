@@ -118,6 +118,7 @@ body, textarea, input, button {
 .burger {
     display: none;
     cursor: pointer;
+    z-index: 5;
 }
 
 .burger__line {
@@ -128,6 +129,18 @@ body, textarea, input, button {
     -webkit-transition: .1s linear;
     -o-transition: .1s linear;
     transition: .1s linear;
+}
+
+.burger-active .burger__line:nth-child(1) {
+    transform: rotate(45deg) translate3d(7px, 7px, 0);
+}
+
+.burger-active .burger__line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-active .burger__line:nth-child(3) {
+    transform: rotate(-45deg) translate3d(7px, -7px, 0);
 }
 
 .burger:hover .burger__line,
@@ -141,6 +154,51 @@ body, textarea, input, button {
 
 .burger__line:not(:first-child) {
     margin-top: 7px;
+}
+
+.burger__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 100vh;
+    padding: 170px 0 249px 50px;
+    background: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 32px 32px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    z-index: 2;
+}
+
+.burger__menu-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger__menu-list {
+    list-style: none;
+}
+
+.burger__menu-item:not(:first-child) {
+    margin-top: 60px;
+}
+
+.burger__menu-link {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.burger__menu-link:hover,
+.burger__menu-link:focus {
+    color: var(--orange);
+}
+
+.burger__menu-link:active {
+    color: var(--dark-orange);
 }
 
 .menu {
@@ -445,6 +503,40 @@ body, textarea, input, button {
     margin-left: 32px;
 }
 
+.how__column-image {
+    display: none;
+    height: 460px;
+    border-radius: 32px;
+}
+
+.how__column-image-active {
+    display: block;
+}
+
+.how__column-image:nth-child(1) {
+    background: url(../images/how/bg-01.png);
+}
+
+.how__column-image:nth-child(2) {
+    background: url(../images/how/bg-02.png);
+}
+
+.how__column-image:nth-child(3) {
+    background: url(../images/how/bg-03.png);
+}
+
+.how__column-image:nth-child(4) {
+    background: url(../images/how/bg-04.png);
+}
+
+.how__block-text {
+    display: none;
+}
+
+.how__block-text-active {
+    display: block;
+}
+
 .how__text {
     width: 758px;
     margin-top: 8px;
@@ -456,7 +548,7 @@ body, textarea, input, button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 38px;
+    margin-top: 18px;
 }
 
 .how__button {

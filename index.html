@@ -19,6 +19,15 @@
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                 </div>
+                <nav class="burger__menu">
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-item"><a href="#" class="burger__menu-link">О нас</a></li>
+                        <li class="burger__menu-item"><a href="#" class="burger__menu-link">Проекты</a></li>
+                        <li class="burger__menu-item"><a href="#" class="burger__menu-link">Этапы</a></li>
+                        <li class="burger__menu-item"><a href="#" class="burger__menu-link">Отзывы</a></li>
+                        <li class="burger__menu-item"><a href="#" class="burger__menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
                 <div class="header__logo logo">
                     <a href="index.html" class="header__logo-link">
                         <img src="./images/header/logo.svg" alt="Евклид Проектные системы" class="header__logo-image">
@@ -98,25 +107,48 @@
                 <div class="how__content">
                     <h2 class="how__title">Как мы работаем</h2>
                     <div class="how__steps">
-                        <div class="how__step">1 шаг</div>
-                        <div class="how__step">2 шаг</div>
-                        <div class="how__step">3 шаг</div>
-                        <div class="how__step">4 шаг</div>
+                        <div class="how__step" data-step="one">1 шаг</div>
+                        <div class="how__step" data-step="two">2 шаг</div>
+                        <div class="how__step" data-step="three">3 шаг</div>
+                        <div class="how__step" data-step="four">4 шаг</div>
                     </div>
                     <div class="how__columns">
                         <div class="how__column">
-                            <div class="how__block-text">
+                            <div class="how__block-text how__block-text-active" data-text="one">
                                 <h3 class="how__block-text-title">Проводим консультацию</h3>
-                                <p class="how__text">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.<br>
-                                    А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                                <div class="how__buttons">
-                                    <a href="#" class="button how__button how__button_orange">Подробнее</a>
-                                    <a href="#" class="button how__button how__button_border">Договор</a>
-                                </div>    
+                                <p class="how__text">
+                                    Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.<br>
+                                    А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                                </p> 
                             </div>
+                            <div class="how__block-text" data-text="two">
+                                <h3 class="how__block-text-title">Составляем смету</h3>
+                                <p class="how__text">
+                                    Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                                </p>
+                            </div>
+                            <div class="how__block-text" data-text="three">
+                                <h3 class="how__block-text-title">Привлекаем подрядчиков</h3>
+                                <p class="how__text">
+                                    Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+                                </p>
+                            </div>
+                            <div class="how__block-text" data-text="four">
+                                <h3 class="how__block-text-title">Инспектируем все этапы работ</h3>
+                                <p class="how__text">
+                                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                                </p>
+                            </div>
+                            <div class="how__buttons">
+                                <a href="#" class="button how__button how__button_orange">Подробнее</a>
+                                <a href="#" class="button how__button how__button_border">Договор</a>
+                            </div>  
                         </div>
                         <div class="how__column">
-                           <img src="./images/how/bg-01.png" alt="" class="how__image">
+                            <div class="how__column-image how__column-image-active" data-image="one"></div>
+                            <div class="how__column-image" data-image="two"></div>
+                            <div class="how__column-image" data-image="three"></div>
+                            <div class="how__column-image" data-image="four"></div>
                         </div>
                     </div>
                 </div>
@@ -240,5 +272,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/accordion.js"></script>
     <script src="scripts/swiper.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/burger-menu.js"></script>
 </body>
 </html>
